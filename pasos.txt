@@ -1,0 +1,16 @@
+OnCreate> 
+
+	1- Generar numero aleatorio entre 1 y 5
+	2- Mostrar "puntaje actual" (setear en cero al cargar la app)
+	3- Mostrar "mejor puntaje"  [CARGAR DESDE SHARED PREFERENCES]
+
+	4- Ingresar en un EditText el numero a adivinar.
+	5- <<CLIC en Button>> 
+		_ contar intento y controlar que es < 5
+			_ >5? -> comparar vs BEST_SCORE (update); volver puntaje a 0 
+			  (reemplazarlo si fuera conveniente)
+		_ comparar con RANDOM_NUM para ver si es un acierto
+			_ ACIERTO: sumar +10 al puntaje, actualizar TextView 
+		_ iterar hasta salir de la activity
+			_ guardar BEST_SCORE con SharedPreferences.
+
